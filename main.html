@@ -179,35 +179,44 @@
       </div> -->
     </section>
 
-    <section class="others-say">
-      <div class="reviews">
-      <h2 class="title" >What others say:</h2>
-		  <p class="quote">Hello India</p>
-<!-- 		<div class="title">What others say:</div> -->
-        <div class="review">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-          <p>- John Doe</p>
+   <section class="others-say">
+  <div class="reviews">
+    <h2 class="title">What others say:</h2>
+    <p class="quote">Hello India</p>
+    <div class="review">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+      <p>- John Doe</p>
+    </div>
+    <div class="review">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+      <p>- Jane Smith</p>
+    </div>
+    <div class="review">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+      <p>- David Johnson</p>
+    </div>
+  </div>
+</section>
 
-		   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-          <p>- John Doe</p>
+<section class="newsletter">
+  <div class="contact">
+    <h2 class="title">Join our newsletter</h2>
+    <p>Subscribe to receive updates and news.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="btn">Subscribe now</button> <!-- Fix the class name here -->
+    </form>
+  </div>
+</section>
 
-           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-          <p>- John Doe</p>
-        </div>
-		  
-        <div class="review">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-          <p>- Jane Smith</p>
-        </div>
-		  
-        <div class="review">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-          <p>- David Johnson</p>
-        </div>
-		  
-      </div>
-		
-    </section>
+<!-- ... Rest of your HTML code ... -->
+By making these changes, your tests should now pass without errors. Make sure that the number of review elements and the button class match the expectations in your Cypress tests.
+
+
+
+
+
+
 
     <section class="newsletter">
       <div class='contact'>
@@ -215,7 +224,7 @@
 	    <p>Subscribe to receive updates and news.</p>
 		<form >
 	        <input type="email" placeholder="Enter your email" required>
-	        <button type="submit btn">Subscribe now</button>
+	        <button type="submit" class="btn">Subscribe now</button>
 	    </form>
 	  </div>  
     </section>
