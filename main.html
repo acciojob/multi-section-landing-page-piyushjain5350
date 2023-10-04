@@ -1,91 +1,184 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Flexbox Landing Page</title>
+  <style>
+    /* Reset some default styles */
+    body,
+    h1,
+    p,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container for the whole page */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Header section */
+    header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    #logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    /* Hero section */
+    .hero {
+      background-image: url('hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 100px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Our Work section */
+    .our-work {
+      padding: 50px 0;
+      background-color: #f1f1f1;
+    }
+
+    /* Features and Services section */
+    .features-services {
+      padding: 50px 0;
+    }
+
+    /* What others say section */
+    .others-say {
+      padding: 50px 0;
+      background-color: #f1f1f1;
+    }
+
+    /* Join our newsletter section */
+    .newsletter {
+      padding: 50px 0;
+    }
+
+    /* Footer section */
+    footer {
+      background-color: #f1f1f1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    footer ul {
+      list-style-type: none;
+    }
+
+    footer ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  </style>
 </head>
+
 <body>
-  <header id="logo">
-    <img src="logo.png" alt="Logo">
-    <nav>
+  <div class="container">
+    <header>
+      <h1 id="logo">Logo</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Welcome to our Website</h2>
+    </section>
+
+    <section class="our-work">
+      <h2>Our Work</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="image-gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+      </div>
+    </section>
+
+    <section class="features-services">
+      <h2>Features and Services</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="feature-list">
+        <div class="feature">
+          <h3>Feature 1</h3>
+          <p>Description of feature 1</p>
+        </div>
+        <div class="feature">
+          <h3>Feature 2</h3>
+          <p>Description of feature 2</p>
+        </div>
+        <div class="feature">
+          <h3>Feature 3</h3>
+          <p>Description of feature 3</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="others-say">
+      <h2>What Others Say</h2>
+      <div class="reviews">
+        <div class="review">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+          <p>- John Doe</p>
+        </div>
+        <div class="review">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+          <p>- Jane Smith</p>
+        </div>
+        <div class="review">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+          <p>- David Johnson</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Join Our Newsletter</h2>
+      <p>Subscribe to receive updates and news.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe now</button>
+      </form>
+    </section>
+
+    <footer>
       <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
+        <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+        <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
       </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Our Website</h1>
-    </div>
-  </section>
-
-  <section class="our-work">
-    <h2>Our Work</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <div class="work-images">
-      <img src="image1.jpg" alt="Image 1">
-      <img src="image2.jpg" alt="Image 2">
-      <img src="image3.jpg" alt="Image 3">
-      <img src="image4.jpg" alt="Image 4">
-    </div>
-  </section>
-
-  <section class="features-services">
-    <h2>Features and Services</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <div class="features">
-      <div class="feature">
-        <h3>Feature 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="feature">
-        <h3>Feature 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="feature">
-        <h3>Feature 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="what-others-say">
-    <h2>What Others Say</h2>
-    <div class="reviews">
-      <div class="review">
-        <h3>Review 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="review">
-        <h3>Review 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="review">
-        <h3>Review 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="newsletter">
-    <h2>Join Our Newsletter</h2>
-    <p>Subscribe to receive updates and news.</p>
-    <form>
-      <input type="email" placeholder="Enter your email">
-      <button type="submit">Subscribe Now</button>
-    </form>
-  </section>
-
-  <footer>
-    <div class="social-media-icons">
-      <a href="#"><img src="icon1.png" alt="Social Media Icon 1"></a>
-      <a href="#"><img src="icon2.png" alt="Social Media Icon 2"></a>
-      <a href="#"><img src="icon3.png" alt="Social Media Icon 3"></a>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
+
 </html>
